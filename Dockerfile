@@ -21,6 +21,6 @@ RUN curl -L "https://sourceforge.net/projects/pentaho/files/Data%20Integration/7
     && rm /tmp/pentaho.zip
 RUN curl "https://downloads.mariadb.com/Connectors/java/connector-java-2.3.0/mariadb-java-client-2.3.0.jar" \
          --output "/opt/pentaho/data-integration/lib/mariadb-java-client.jar"
-RUN curl "http://central.maven.org/maven2/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar" \
+RUN curl "http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar" \
          --output "/opt/pentaho/data-integration/lib/mysql-connector-java.jar"
 ENV PENTAHO_HOME "/opt/pentaho/data-integration"
